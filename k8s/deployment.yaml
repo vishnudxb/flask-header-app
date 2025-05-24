@@ -5,7 +5,7 @@ metadata:
   labels:
     app: flask-header-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: flask-header-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: flask-header-app
-        image: <your-docker-repo>/flask-header-app:latest
+        image: vishnunair/flask-header-app:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
